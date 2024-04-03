@@ -1,21 +1,34 @@
-const express = require('express')
-const http = require('node:http')
-const cors =  require('cors')
+const express  = require("express");
+const http     = require("node:http");
+const cors     = require("cors");
+const mongoose = require("mongoose");
 
-const { ApolloServer } = require('@apollo/server')
-const { expressMiddleware } = require('@apollo/server/express4')
-const { ApolloServerPluginDrainHttpServer } = require('@apollo/server/plugin/drainHttpServer')
+const { ApolloServer } = require("@apollo/server");
+const { expressMiddleware } = require("@apollo/server/express4");
+const {
+  ApolloServerPluginDrainHttpServer,
+} = require("@apollo/server/plugin/drainHttpServer");
+
+/**
+ * Routes
+ */
+const home = require("./routes/home");
+const user = require("./routes/user");
 
 const app = express();
 const httpServer = http.createServer(app);
 
-const PORT = process.env.PORT || 3333
+const PORT = process.env.PORT || 3333;
+const MONGO_URL = process.env.MONGO_URL;
 
 app.use(express.json());
 app.use(cors());
 
-const { typeDefs, resolvers } = require('./graphql/index.js')
- 
+app.use("/", home);
+app.use("/users", user);
+
+const { typeDefs, resolvers } = require("./graphql/index.js");
+
 async function initServer() {
   const server = new ApolloServer({
     typeDefs,
@@ -27,8 +40,10 @@ async function initServer() {
 
   app.use("/graphql", expressMiddleware(server));
 
-  await new Promise(resolve => httpServer.listen({ port: PORT }, resolve))
+  await mongoose.connect(MONGO_URL)
 
-  console.log(`Server running...`)
+  await new Promise((resolve) => httpServer.listen({ port: PORT }, resolve));
+
+  console.log(`⚡Server running on PORT ${PORT}...`);
 }
 initServer();
