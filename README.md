@@ -130,4 +130,9 @@ mutation {
 Header: Authorization (JWT) 
 
 ```
-
+<table>
+  <tr>
+    <td align="center"><a href="https://www.instagram.com/ericneves_dev/"><img src="https://avatars.githubusercontent.com/u/32256029" width="100px;" alt=""/><br /><sub><b>Eric Neves</b></sub></a></td>
+    <td>👋 Me chamo Eric Neves, sou desenvolvedor web com foco em backend e autor deste projeto. <br /> <a href="https://www.instagram.com/ericneves_dev/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a> <a href="https://linkedin.com/in/ericnevesrr"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
+  </tr>
+</table>
