@@ -40,14 +40,32 @@ Este projeto apresenta um aplicativo construído com **Node.js**, **Express** e 
     * ✅ Informações do Usuário
   * Mutation 
     * ✅ Atualizar Informações do Usuário
+- ⚡ Dependencies:
+  * @apollo/server `4.10.2`
+  * bcrypt `5.1.1`
+  * cors `2.8.5`
+  * express `4.19.2`
+  * graphql `16.8.1`
+  * jsonwebtoken `9.0.2`
+  * mongoose `8.2.4`
 
-⚡ Dependencies:
+#### Execute
 
-+ @apollo/server `4.10.2`
-+ bcrypt `5.1.1`
-+ cors `2.8.5`
-+ express `4.19.2`
-+ graphql `16.8.1`
-+ jsonwebtoken `9.0.2`
-+ mongoose `8.2.4`
+> [!NOTE]
+> Siga os passos abaixo para a execução do projeto.
 
+```sh 
+
+# Clone
+$ git clone https://github.com/EricNeves/quickstartGraphQL.git
+
+# Project Folder
+$ cd quickstartGraphQL 
+
+# Install Deps
+$ cd www && pnpm install
+
+# Execute Docker - ./quickstartGraphQL
+$ docker-compose up -d --build
+
+```
