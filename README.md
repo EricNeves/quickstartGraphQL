@@ -1,4 +1,10 @@
 <h4 align="center">
+  <br />
+  
+  <img src=".assets/icon.png">
+
+  <br />
+
   Aplicação desenvolvida com NodeJs, Express e MongoDB para dispolibilizar uma RESTful, além de integrar o GraphQL para fornecer uma camada adicional de consulta flexível e eficiente. 
 </h4>
 
