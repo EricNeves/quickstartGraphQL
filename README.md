@@ -15,7 +15,7 @@ Aplicação desenvolvida com NodeJs, Express e MongoDB para dispolibilizar uma R
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/EricNeves/quickstartGraphQL?style=flat-square&logo=github&color=%235755FE" alt="Github">
   <img src="https://img.shields.io/github/languages/top/EricNeves/quickstartGraphQL?style=flat-square&logo=javascript">
-  <img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">
+  <img src="https://img.shields.io/github/license/ericneves/quickstartGraphQL?style=flat-square&logo=github&labelColor=%2331363F&color=%23FF204E">
 </p>
 
 <img src=".assets/graphql.png"><img src=".assets/rest.png">
@@ -139,4 +139,4 @@ Header: Authorization (JWT)
 
 ### License 
 
-<img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">
+<img src="https://img.shields.io/github/license/ericneves/quickstartGraphQL?style=flat-square&logo=github&labelColor=%2331363F&color=%23FF204E">
