@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch --env-file=.env.local src/server.js",
+    "start:dev": "node --watch --env-file=.env.local src/server.js",
     "start": "node --env-file=.env src/server.js"
   },
   "keywords": [],
