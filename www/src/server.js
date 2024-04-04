@@ -1,6 +1,6 @@
-const express  = require("express");
-const http     = require("node:http");
-const cors     = require("cors");
+const express = require("express");
+const http = require("node:http");
+const cors = require("cors");
 const mongoose = require("mongoose");
 
 const { ApolloServer } = require("@apollo/server");
@@ -8,6 +8,8 @@ const { expressMiddleware } = require("@apollo/server/express4");
 const {
   ApolloServerPluginDrainHttpServer,
 } = require("@apollo/server/plugin/drainHttpServer");
+
+const { context } = require("./graphql/context");
 
 /**
  * Routes
@@ -38,9 +40,14 @@ async function initServer() {
 
   await server.start();
 
-  app.use("/graphql", expressMiddleware(server));
+  app.use(
+    "/graphql",
+    expressMiddleware(server, {
+      context,
+    })
+  );
 
-  await mongoose.connect(MONGO_URL)
+  await mongoose.connect(MONGO_URL);
 
   await new Promise((resolve) => httpServer.listen({ port: PORT }, resolve));
 
