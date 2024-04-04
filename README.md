@@ -93,9 +93,9 @@ $ curl -X POST \
   http://localhost:3030/users
 
 {
-	"id": "660ebf9dc1f55ee8a836f218",
-	"name": "admin",
-	"email": "admin@test.com"
+  "id": "660ebf9dc1f55ee8a836f218",
+  "name": "admin",
+  "email": "admin@test.com",
 }
 
 ```
