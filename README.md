@@ -4,6 +4,7 @@
   <img src=".assets/icon.png">
 
   <br />
+  <br />
 
   Aplicação desenvolvida com NodeJs, Express e MongoDB para dispolibilizar uma RESTful, além de integrar o GraphQL para fornecer uma camada adicional de consulta flexível e eficiente. 
 </h4>
@@ -16,7 +17,17 @@
   <img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">
 </p>
 
-<img src=".assets/rest.png"><img src=".assets/graphql.png">
+<img src=".assets/graphql.png"><img src=".assets/rest.png">
+
+#### Intro
+
+Este projeto apresenta um aplicativo construído com Node.js, Express e MongoDB, proporcionando uma API RESTful para interagir com os dados. Além disso, ele incorpora o GraphQL para oferecer uma alternativa poderosa de consulta de dados.
+
+GraphQL vem como uma alternativa para resolver 2 problemas de Rest APIS, que é o caso de Over-fetching e Under-fetching.
+
+> [!NOTE]
+> - **Over-fetching**: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
+> - Over-fetching: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
 
 dependencies:
 + @apollo/server 4.10.2
