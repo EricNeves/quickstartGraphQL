@@ -20,7 +20,7 @@ const user = require("./routes/user");
 const app = express();
 const httpServer = http.createServer(app);
 
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3030;
 const MONGO_URL = process.env.MONGO_URL;
 
 app.use(express.json());
