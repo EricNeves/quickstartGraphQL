@@ -21,13 +21,13 @@
 
 #### Intro
 
-Este projeto apresenta um aplicativo construído com Node.js, Express e MongoDB, proporcionando uma API RESTful para interagir com os dados. Além disso, ele incorpora o GraphQL para oferecer uma alternativa poderosa de consulta de dados.
+Este projeto apresenta um aplicativo construído com **Node.js**, **Express** e **MongoDB**, proporcionando uma **API RESTful** para interagir com os dados. Além disso, ele incorpora o **GraphQL** para oferecer uma alternativa poderosa de consulta de dados.
 
-GraphQL vem como uma alternativa para resolver 2 problemas de Rest APIS, que é o caso de Over-fetching e Under-fetching.
+**GraphQL** vem como uma alternativa para resolver **2 problemas** de **Rest APIS**, que é o caso de **Over-fetching** e **Under-fetching**.
 
-> [?NOTE]
+> [!NOTE]
 > - **Over-fetching**: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
-> - Over-fetching: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
+> - **Under-fetching**:  Este problema acontece quando uma solicitação não fornece informações suficientes, levando o cliente a fazer várias solicitações adicionais para obter os dados necessários.
 
 dependencies:
 + @apollo/server 4.10.2
