@@ -102,4 +102,13 @@ $ curl -X POST \
 
 ```sh
 
+$ curl -X POST \
+  -d '{ "email": "admin@test.com", "password": "admin" }' \
+  -H "Content-Type: application/json" \
+  http://localhost:3030/users/login
+
+{
+  "jwt": "your-token"
+}
+
 ```
