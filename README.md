@@ -31,6 +31,7 @@ Este projeto apresenta um aplicativo construído com **Node.js**, **Express** e 
 
 #### Features
 
+- 🗃️ Padrão Layered Architecture 
 - 🐙 Criar usuário
 - 🔑 Autenticação - JWT
 - 👾 Informações do Usuário
@@ -40,11 +41,13 @@ Este projeto apresenta um aplicativo construído com **Node.js**, **Express** e 
   * Mutation 
     * ✅ Atualizar Informações do Usuário
 
-dependencies:
-+ @apollo/server 4.10.2
-+ bcrypt 5.1.1
-+ cors 2.8.5
-+ express 4.19.2
-+ graphql 16.8.1
-+ jsonwebtoken 9.0.2
-+ mongoose 8.2.4
+⚡ Dependencies:
+
++ @apollo/server `4.10.2`
++ bcrypt `5.1.1`
++ cors `2.8.5`
++ express `4.19.2`
++ graphql `16.8.1`
++ jsonwebtoken `9.0.2`
++ mongoose `8.2.4`
+
