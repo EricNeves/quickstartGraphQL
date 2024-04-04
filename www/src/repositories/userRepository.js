@@ -9,8 +9,8 @@ class UserRepository {
     await user.save();
 
     return {
-      id: user._id,
-      name: user.name,
+      id:    user._id,
+      name:  user.name,
       email: user.email,
     };
   }
@@ -36,9 +36,23 @@ class UserRepository {
       email: user.email,
     };
 
-    const jwt = await user.generateJWT(payload)
+    const jwt = await user.generateJWT(payload);
 
-    return jwt
+    return jwt;
+  }
+
+  async find({ id }) {
+    const user = await this.User.findOne({ _id: id });
+
+    if (!user) {
+      return null;
+    }
+
+    return {
+      id:    user._id,
+      name:  user.name,
+      email: user.email,
+    };
   }
 }
 

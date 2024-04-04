@@ -39,7 +39,29 @@ async function login({ userService }, req, res) {
   return;
 }
 
+async function info({ userService }, req, res) {
+  const user = await userService.fetchInfo(req.user);
+
+  if (user.error) {
+    res.status(400).json({
+      error: user.error,
+    });
+    return;
+  }
+
+  if (user.unauthorized) {
+    res.status(401).json({
+      error: user.unauthorized,
+    });
+    return;
+  }
+
+  res.json(user);
+  return;
+}
+
 module.exports = {
   store,
-  login
+  login,
+  info
 };

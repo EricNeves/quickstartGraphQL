@@ -16,9 +16,15 @@ const userFactory = require('../factories/userFactory')
 const userService = userFactory.generateInstance()
 
 /**
+ * Middlewares
+ */
+const { isAuthenticated } = require('../middlewares/authenticateMiddleware')
+
+/**
  * Endpoints
  */
-router.post('/', userController.store.bind({}, { userService }))
+router.post('/',      userController.store.bind({}, { userService }))
 router.post('/login', userController.login.bind({}, { userService }))
+router.get('/info',   isAuthenticated, userController.info.bind({},  { userService }))
 
 module.exports = router

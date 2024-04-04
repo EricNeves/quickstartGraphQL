@@ -18,7 +18,21 @@ class UserService {
       const user = await this.userRepository.auth(data);
 
       if (!user) {
-        return { unauthorized: 'Sorry, email/password is incorrect.' }
+        return { unauthorized: "Sorry, email/password is incorrect." };
+      }
+
+      return user;
+    } catch (err) {
+      return { error: err.message };
+    }
+  }
+
+  async fetchInfo(data) {
+    try {
+      const user = await this.userRepository.find(data);
+
+      if (!user) {
+        return { unauthorized: "Sorry, user not found." };
       }
 
       return user;
