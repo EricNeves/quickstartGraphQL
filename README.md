@@ -29,6 +29,17 @@ Este projeto apresenta um aplicativo construído com **Node.js**, **Express** e 
 > - **Over-fetching**: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
 > - **Under-fetching**:  Este problema acontece quando uma solicitação não fornece informações suficientes, levando o cliente a fazer várias solicitações adicionais para obter os dados necessários.
 
+#### Features
+
+- 🐙 Criar usuário
+- 🔑 Autenticação - JWT
+- 👾 Informações do Usuário
+- 🕸️ GraphQL
+  * Query
+    * ✅ Informações do Usuário
+  * Mutation 
+    * ✅ Atualizar Informações do Usuário
+
 dependencies:
 + @apollo/server 4.10.2
 + bcrypt 5.1.1
