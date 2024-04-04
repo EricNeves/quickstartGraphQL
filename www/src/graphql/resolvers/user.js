@@ -4,7 +4,8 @@ const { User } = require("../../models/User");
 const userRepository = new UserRepository({ User });
 
 function getUser({ userRepository }) {
-  return async function (parent, { id }, context) {
+  return async function (parent, { }, context) {
+    const { id } = context
     return await userRepository.find({ id });
   };
 }
