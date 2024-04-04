@@ -1,8 +1,8 @@
-const { getAll } = require('./user')
+const { getUser } = require('./user')
 
 const resolvers = {
   Query: {
-    getAll
+    getUser
   },
 };
 
