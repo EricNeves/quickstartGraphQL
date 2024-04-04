@@ -74,16 +74,7 @@ $ docker-compose up -d --build
 
 #### Quickstart
 
-```sh
-
-$ curl http://localhost:3030
-
-{
-	"author": "Eric Neves <github.com/ericneves>",
-	"message": "🚀 Welcome to the api!"
-}
-
-```
+##### 🛸 Rest
 
 ```sh
 
@@ -112,3 +103,31 @@ $ curl -X POST \
 }
 
 ```
+
+##### 📡 GraphQL
+
+```graphql
+
+query {
+  getUser {
+    id,
+    name
+  }
+}
+
+Header: Authorization (JWT) 
+
+```
+
+```graphql
+
+mutation {
+  updateUser(input: { name: "...", email: "..." }) {
+    id
+  }
+}
+
+Header: Authorization (JWT) 
+
+```
+
