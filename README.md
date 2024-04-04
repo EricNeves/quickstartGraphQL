@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">
 </p>
 
-<img src=".assets/rest.png" width="50%"><img src=".assets/graphql.png" width="50%">
+<img src=".assets/rest.png"><img src=".assets/graphql.png">
 
 dependencies:
 + @apollo/server 4.10.2
