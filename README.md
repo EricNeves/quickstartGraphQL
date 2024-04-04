@@ -13,8 +13,8 @@ Aplicação desenvolvida com NodeJs, Express e MongoDB para dispolibilizar uma R
 <p align="center">Data de criação: Apr 4, 2024</p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/ericneves/mySeries?display_timestamp=author&style=flat-square&logo=github&labelColor=%235961FF&color=%23333333" alt="Github">
-  <img src="https://img.shields.io/github/languages/top/ericneves/mySeries?style=flat-square&logo=javascript&labelColor=%23556066&color=%2379A55B">
+  <img src="https://img.shields.io/github/last-commit/EricNeves/quickstartGraphQL?style=flat-square&logo=github&color=%235755FE" alt="Github">
+  <img src="https://img.shields.io/github/languages/top/EricNeves/quickstartGraphQL?style=flat-square&logo=javascript">
   <img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">
 </p>
 
@@ -136,3 +136,7 @@ Header: Authorization (JWT)
     <td>👋 Me chamo Eric Neves, sou desenvolvedor web com foco em backend e autor deste projeto. <br /> <a href="https://www.instagram.com/ericneves_dev/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a> <a href="https://linkedin.com/in/ericnevesrr"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a></td>
   </tr>
 </table>
+
+### License 
+
+<img src="https://img.shields.io/github/license/ericneves/mySeries?style=flat-square&logo=github&labelColor=%231F2937&color=%23374151">
