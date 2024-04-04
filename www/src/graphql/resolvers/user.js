@@ -4,14 +4,26 @@ const { User } = require("../../models/User");
 const userRepository = new UserRepository({ User });
 
 function getUser({ userRepository }) {
-  return function (parent, { id }, context) {
-    return userRepository.find({ id });
+  return async function (parent, { id }, context) {
+    return await userRepository.find({ id });
+  };
+}
+
+function updateUser({ userRepository }) {
+  return async function (parent, { input: { name, email } }, context) {
+    const { id } = context
+
+    const user = await userRepository.change({ id, name, email })
+
+    return user;
   };
 }
 
 module.exports = {
   getUser: getUser({ userRepository }),
+  updateUser: updateUser({ userRepository }),
   pure: {
     getUser,
+    updateUser,
   },
 };

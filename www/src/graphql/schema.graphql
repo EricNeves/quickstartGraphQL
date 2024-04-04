@@ -6,3 +6,10 @@ type User {
   name:  String
   email: String
 }
+type Mutation {
+  updateUser(input: bodyUser): User
+}
+input bodyUser {
+  name: String
+  email: String
+}

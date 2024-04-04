@@ -54,6 +54,20 @@ class UserRepository {
       email: user.email,
     };
   }
+
+  async change({ id, name, email }) {
+    const user = await this.User.findOneAndUpdate({ _id: id }, { name, email })
+
+    if (!user) {
+      return null;
+    }
+
+    return {
+      id:    user._id,
+      name:  user.name,
+      email: user.email,
+    };
+  }
 }
 
 module.exports = {
