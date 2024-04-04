@@ -25,7 +25,7 @@ Este projeto apresenta um aplicativo construído com Node.js, Express e MongoDB,
 
 GraphQL vem como uma alternativa para resolver 2 problemas de Rest APIS, que é o caso de Over-fetching e Under-fetching.
 
-> [!NOTE]
+> [?NOTE]
 > - **Over-fetching**: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
 > - Over-fetching: Este problema ocorre quando a API retorna mais dados do que o necessário para uma determinada solicitação.
 
