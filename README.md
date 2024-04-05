@@ -6,7 +6,7 @@
   <br />
   <br />
 
-Aplicação desenvolvida com NodeJs, Express e MongoDB para dispolibilizar uma RESTful, além de integrar o GraphQL para fornecer uma camada adicional de consulta flexível e eficiente.
+Aplicação desenvolvida com NodeJs, Express e MongoDB para dispolibilizar uma RESTful API, além de integrar o GraphQL para fornecer uma camada adicional de consulta flexível e eficiente.
 
 </h4>
 
